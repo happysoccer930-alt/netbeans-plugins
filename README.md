@@ -2,7 +2,7 @@
 
 Suite de plugins para **Apache NetBeans 31** (Windows, JDK 17+).
 
-| MÃ³dulo | Estado | QuÃ© hace |
+| Modulo | Estado | Que hace |
 |---|---|---|
 | `softdark-theme` | âœ… listo | Tema oscuro cÃ¡lido de bajo contraste para el editor |
 | `ai-errors` | âœ… listo | Tutor de Java, errores con Gemini y sugerencias fantasma al escribir |
