@@ -81,6 +81,28 @@ curl http://127.0.0.1:1235/v1/models
 Debe devolver el id del modelo. El plugin de NetBeans autodetecta
 **1235, 1234, 11434 y 8080**, así que cualquier puerto de esos sirve.
 
+### Si tu programa solo acepta el puerto 1234
+
+Algunos clientes (por ejemplo la extensión de Visual Studio) usan el 1234 fijo.
+Puedes redirigir el 1234 al 1235 con una regla de Windows (una vez, como
+administrador):
+
+```bat
+netsh interface portproxy add v4tov4 listenport=1234 listenaddress=127.0.0.1 connectport=1235 connectaddress=127.0.0.1
+```
+
+Comprobar que funciona:
+
+```bash
+curl http://127.0.0.1:1234/v1/models
+```
+
+Para quitarla:
+
+```bat
+netsh interface portproxy delete v4tov4 listenport=1234 listenaddress=127.0.0.1
+```
+
 ---
 
 ## 3. VS Code
