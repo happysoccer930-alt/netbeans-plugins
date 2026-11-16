@@ -14,7 +14,7 @@
     <artifactId>crud-generator</artifactId>
     <packaging>nbm</packaging>
 
-    <name>DeepSetk CRUD Generator</name>
+    <name>CRUD Generator</name>
     <description>Genera Entity, DAO JDBC, Service y SQL a partir de un CREATE TABLE de MySQL.</description>
 
     <dependencies>

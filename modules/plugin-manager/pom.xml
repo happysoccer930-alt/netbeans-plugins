@@ -14,7 +14,7 @@
     <artifactId>plugin-manager</artifactId>
     <packaging>nbm</packaging>
 
-    <name>DeepSetk Plugin Manager</name>
+    <name>Plugin Manager</name>
     <description>Panel para activar y desactivar modulos de NetBeans con busqueda, categorias y proteccion de dependencias.</description>
 
     <dependencies>

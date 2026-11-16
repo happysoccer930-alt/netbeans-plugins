@@ -12,8 +12,8 @@ Desde **Tools** se accede a todo:
 |---|---|
 | Aplicar tema Soft Dark | Tema base |
 | Aplicar estilo Cyberpunk (negro y azul) | Tema cyberpunk |
-| **Aplicar tema DeepSetk Dark** | Negro puro, selección gris |
-| **Aplicar tema DeepSetk Hacker Green** | Verde neón |
+| **Aplicar tema Dark** | Negro puro, selección gris |
+| **Aplicar tema Hacker Green** | Verde neón |
 | Tutor Gemini: aprender con mi código | Asistente con el código abierto |
 | **Explicar error con IA** | Usa la IA local (Bionic :1235) o Gemini |
 | Configurar Gemini / Configurar LLM local | Ajustes de proveedor |
@@ -21,7 +21,7 @@ Desde **Tools** se accede a todo:
 | **Pedir sugerencia IA ahora** | `Ctrl+Alt+Espacio` |
 | Lista de música / YouTube Player | Módulos extra |
 
-## 2. Tema DeepSetk Dark aplicado en un perfil limpio
+## 2. Tema Dark aplicado en un perfil limpio
 
 ![Tema Dark](img/02-tema-dark.png)
 

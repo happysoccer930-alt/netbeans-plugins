@@ -17,7 +17,7 @@ public final class CyberpunkInstaller extends ModuleInstall {
         if (active.isEmpty()) {
             // Compatibilidad con instalaciones anteriores. Si Cyberpunk estaba
             // activo se conserva; si estaba desactivado no se reclama el estilo
-            // para dejar que otro modulo (DeepSetk UI Themes) restaure el suyo.
+            // para dejar que otro modulo (UI Themes) restaure el suyo.
             if (!prefs.getBoolean("initialized", false)) {
                 prefs.putBoolean("initialized", true);
                 active = ThemeSwitch.CYBERPUNK;

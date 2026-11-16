@@ -14,7 +14,7 @@
     <artifactId>music</artifactId>
     <packaging>nbm</packaging>
 
-    <name>DeepSetk Music</name>
+    <name>Music</name>
     <description>Reproductor de musica local (MP3, FLAC, OGG, WAV) con lista persistente y controles en la barra.</description>
 
     <dependencies>

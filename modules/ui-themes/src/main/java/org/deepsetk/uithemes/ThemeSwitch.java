@@ -10,7 +10,7 @@ import org.openide.windows.WindowManager;
 
 /**
  * Estado compartido entre los modulos de estilos (Cyberpunk, Soft Dark y
- * DeepSetk UI Themes). Guarda cual es el estilo activo para que al reiniciar
+ * UI Themes). Guarda cual es el estilo activo para que al reiniciar
  * solo se aplique ese y no se pisen entre ellos.
  */
 final class ThemeSwitch {

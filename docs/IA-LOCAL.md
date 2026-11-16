@@ -1,4 +1,4 @@
-# IA local offline (DeepSetk)
+# IA local offline ()
 
 Todo el entorno de IA de este repo funciona **sin internet**, contra un servidor
 local compatible con OpenAI.

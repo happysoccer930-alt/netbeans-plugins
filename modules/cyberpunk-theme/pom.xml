@@ -14,7 +14,7 @@
     <artifactId>cyberpunk-theme</artifactId>
     <packaging>nbm</packaging>
 
-    <name>DeepSetk Cyberpunk</name>
+    <name>Cyberpunk</name>
     <description>Estilo negro y azul para la interfaz de NetBeans y perfil de colores Cyberpunk para el editor.</description>
 
     <dependencies>

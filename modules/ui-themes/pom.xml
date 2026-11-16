@@ -14,8 +14,8 @@
     <artifactId>ui-themes</artifactId>
     <packaging>nbm</packaging>
 
-    <name>DeepSetk UI Themes</name>
-    <description>Temas de interfaz DeepSetk Dark y Hacker Green para NetBeans.</description>
+    <name>UI Themes</name>
+    <description>Temas de interfaz Dark y Hacker Green para NetBeans.</description>
 
     <dependencies>
         <dependency>

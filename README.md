@@ -1,4 +1,4 @@
-# DeepSetk · Plugins para NetBeans
+# Plugins para NetBeans
 
 Suite de plugins para **Apache NetBeans 31**: temas oscuros, IA local sin internet,
 reproductor de música, generador de CRUD y gestor de plugins.
@@ -11,8 +11,8 @@ Todo funciona en Windows con el JDK que ya trae NetBeans.
 
 | Plugin | Qué hace |
 |---|---|
-| **DeepSetk Dark** | Tema negro puro, sin azules. Selección gris. |
-| **DeepSetk Hacker Green** | Tema negro con verde neón y números de línea verdes. |
+| **Dark** | Tema negro puro, sin azules. Selección gris. |
+| **Hacker Green** | Tema negro con verde neón y números de línea verdes. |
 | **Cyberpunk** | Estilo negro y azul, con splash propio. |
 | **Soft Dark** | Tema suave de bajo contraste para leer cómodo. |
 | **IA local** | Sugerencias mientras escribes y explicación de errores, sin internet. |
@@ -27,16 +27,16 @@ Todo funciona en Windows con el JDK que ya trae NetBeans.
 ## Empezar en 3 pasos
 
 1. **Instalar los plugins**
-   NetBeans → **Herramientas → Plugins → Descargados → Agregar plugins…**
-   Elige los `.nbm` de la carpeta `dist/` → **Instalar** → reinicia.
+ NetBeans → **Herramientas → Plugins → Descargados → Agregar plugins…**
+ Elige los `.nbm` de la carpeta `dist/` → **Instalar** → reinicia.
 
 2. **Elegir el tema**
-   **Herramientas → Aplicar tema DeepSetk Dark** (o *Hacker Green*).
-   Acepta el reinicio.
+ **Herramientas → Aplicar tema Dark** (o *Hacker Green*).
+ Acepta el reinicio.
 
 3. **Encender la IA local**
-   Doble clic en el acceso directo **“Iniciar IA + NetBeans”**, o abre Bionic
-   y pulsa *Start Server*. Después, en NetBeans: **Herramientas → Sugerencias fantasma (Tab)**.
+ Doble clic en el acceso directo **“Iniciar IA + NetBeans”**, o abre Bionic
+ y pulsa *Start Server*. Después, en NetBeans: **Herramientas → Sugerencias fantasma (Tab)**.
 
 Guía completa para otro PC: **[INSTALL.md](INSTALL.md)**
 
@@ -91,7 +91,7 @@ Detalles técnicos y ajustes: **[docs/IA-LOCAL.md](docs/IA-LOCAL.md)**
 ## Compilar desde el código
 
 ```powershell
-cd D:\DeepSetk\netbeans-deepsetk
+cd D:\\netbeans-plugins
 & "C:\Program Files\netbeans\java\maven\bin\mvn.cmd" clean package
 ```
 
@@ -104,22 +104,22 @@ En `dist/` hay copias ya compiladas para instalar.
 
 ```
 modules/
-  ui-themes/        Temas DeepSetk Dark y Hacker Green
-  cyberpunk-theme/  Tema Cyberpunk
-  softdark-theme/   Tema Soft Dark
-  ai-errors/        IA local, tutor y sugerencias
-  crud-generator/   Generador de CRUD
-  music/            Reproductor
-  youtube/          YouTube
-  plugin-manager/   Gestor de plugins
-docs/               Capturas, guía de IA y diagramas
-tools/              Lanzador "Iniciar IA + NetBeans"
-dist/               .nbm listos para instalar
+ ui-themes/ Temas Dark y Hacker Green
+ cyberpunk-theme/ Tema Cyberpunk
+ softdark-theme/ Tema Soft Dark
+ ai-errors/ IA local, tutor y sugerencias
+ crud-generator/ Generador de CRUD
+ music/ Reproductor
+ youtube/ YouTube
+ plugin-manager/ Gestor de plugins
+docs/ Capturas, guía de IA y diagramas
+tools/ Lanzador "Iniciar IA + NetBeans"
+dist/ .nbm listos para instalar
 ```
 
 ---
 
 ## Otros repos
 
-- **Solo temas de diseño:** https://github.com/happysoccer930-alt/netbeans-deepsetk-themes
+- **Solo temas de diseño:** https://github.com/happysoccer930-alt/netbeans-themes
 - **Licencia:** Apache-2.0

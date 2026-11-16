@@ -27,12 +27,12 @@ Probado con perfiles vacíos (userdir de NetBeans limpio y VS Code sin extension
 
 > ⚠️ Copiar solo los `.jar` a `%APPDATA%\NetBeans\31\modules` **no funciona** en un
 > perfil nuevo: NetBeans no los activa. Hace falta el `.nbm` o el XML de
-> `config\Modules\` (ver `netbeans-deepsetk-themes/README.md`).
+> `config\Modules\` (ver `netbeans-themes/README.md`).
 
 ### Opción B — compilar
 
 ```bash
-cd netbeans-deepsetk
+cd netbeans-plugins
 mvn -B package
 ```
 
@@ -40,7 +40,7 @@ Los `.nbm` quedan en `modules/<modulo>/target/nbm/`.
 
 ### Activar el tema
 
-**Tools → Aplicar tema DeepSetk Dark** (o *Hacker Green*), aceptar el reinicio.
+**Tools → Aplicar tema Dark** (o *Hacker Green*), aceptar el reinicio.
 
 Comprobación: fondo negro (`#000000`), menús negros, selección gris `#353535`.
 
@@ -86,23 +86,23 @@ Debe devolver el id del modelo. El plugin de NetBeans autodetecta
 ## 3. VS Code
 
 1. Instalar la extensión **Continue**:
-   ```bash
-   code --install-extension continue.continue
-   ```
+ ```bash
+ code --install-extension continue.continue
+ ```
 2. Copiar la configuración (ajustar puerto/modelo si hace falta):
-   ```bash
-   copy vscode\continue-config.yaml %USERPROFILE%\.continue\config.yaml
-   ```
+ ```bash
+ copy vscode\continue-config.yaml %USERPROFILE%\.continue\config.yaml
+ ```
 3. Instalar el botón de la barra de estado:
-   ```bash
-   code --install-extension vscode\ia-local\ia-local-deepsetk-1.0.0.vsix
-   ```
+ ```bash
+ code --install-extension vscode\ia-local\ia-local-deepsetk-1.0.0.vsix
+ ```
 4. Añadir a `settings.json` (si no están):
-   ```json
-   "continue.enableTabAutocomplete": true,
-   "continue.telemetryEnabled": false,
-   "editor.inlineSuggest.enabled": true
-   ```
+ ```json
+ "continue.enableTabAutocomplete": true,
+ "continue.telemetryEnabled": false,
+ "editor.inlineSuggest.enabled": true
+ ```
 
 Comprobación: abajo a la derecha aparece `⚡ IA local ON`; al escribir código
 sale una sugerencia en gris y **Tab** la acepta.
@@ -118,7 +118,7 @@ sale una sugerencia en gris y **Tab** la acepta.
 1. Instalar **LM Local – AI assistant** desde el Marketplace (VSIX).
 2. **Extensions → LM Local → ⋯ → Settings…**
 3. Provider: *LM Studio* · Base URL: `http://127.0.0.1:1235/v1` · Modelo:
-   `qwen2.5-coder-1.5b-instruct` → **Test**.
+ `qwen2.5-coder-1.5b-instruct` → **Test**.
 
 ---
 
@@ -126,7 +126,7 @@ sale una sugerencia en gris y **Tab** la acepta.
 
 - [ ] `curl http://127.0.0.1:1235/v1/models` devuelve el modelo
 - [ ] NetBeans: **Tools** muestra *Aplicar tema*, *Sugerencias fantasma*,
-      *Explicar error con IA*, *Configurar LLM local*
+ *Explicar error con IA*, *Configurar LLM local*
 - [ ] NetBeans: el tema se ve negro tras reiniciar
 - [ ] NetBeans: `Ctrl+Alt+Espacio` genera una sugerencia en el editor
 - [ ] VS Code: `⚡ IA local ON` en la barra de estado

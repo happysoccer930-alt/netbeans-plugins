@@ -9,7 +9,7 @@
     <version>1.0.0</version>
     <packaging>pom</packaging>
 
-    <name>DeepSetk NetBeans Suite</name>
+    <name>NetBeans Plugins</name>
     <description>Plugins de Apache NetBeans: tema Soft Dark, reproductor de musica y asistente de errores con Gemini.</description>
 
     <properties>

@@ -26,7 +26,7 @@ import org.openide.util.NbPreferences;
 import org.openide.windows.WindowManager;
 
 /**
- * Aplica los temas de interfaz DeepSetk Dark y DeepSetk Hacker Green:
+ * Aplica los temas de interfaz Dark y Hacker Green:
  * menus, pestanas, barras, tablas, campos de texto y el perfil del editor.
  */
 final class DeepSetkUI {
