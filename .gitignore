@@ -1,0 +1,24 @@
+# Build artifacts
+target/
+build/
+*.class
+
+# NetBeans / IDE
+nbproject/private/
+nbbuild/
+nbrepo/
+.idea/
+*.iml
+*.ipr
+*.iws
+nb-configuration.xml
+
+# Sistema
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Logs / temporales
+*.log
+*.tmp
+*.bak

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE filesystem PUBLIC "-//NetBeans//DTD Filesystem 1.2//EN" "https://netbeans.apache.org/dtds/filesystem-1_2.dtd">
+<filesystem>
+    <folder name="Actions">
+        <folder name="Tools">
+            <file name="org-deepsetk-aierrors-tutor.instance">
+                <attr name="instanceClass" stringvalue="org.deepsetk.aierrors.TutorAction"/>
+            </file>
+            <file name="org-deepsetk-aierrors-explain.instance">
+                <attr name="instanceClass" stringvalue="org.deepsetk.aierrors.ExplainAction"/>
+            </file>
+            <file name="org-deepsetk-aierrors-config.instance">
+                <attr name="instanceClass" stringvalue="org.deepsetk.aierrors.ConfigureAction"/>
+            </file>
+            <file name="org-deepsetk-aierrors-ghost.instance">
+                <attr name="instanceClass" stringvalue="org.deepsetk.aierrors.GhostToggleAction"/>
+            </file>
+            <file name="org-deepsetk-aierrors-local-llm.instance">
+                <attr name="instanceClass" stringvalue="org.deepsetk.aierrors.LocalLlmConfigAction"/>
+            </file>
+            <file name="org-deepsetk-aierrors-opencode.instance">
+                <attr name="instanceClass" stringvalue="org.deepsetk.aierrors.OpenCodeConfigAction"/>
+            </file>
+            <file name="org-deepsetk-aierrors-suggest-now.instance">
+                <attr name="instanceClass" stringvalue="org.deepsetk.aierrors.GhostSuggestNowAction"/>
+            </file>
+            <file name="org-deepsetk-aierrors-local-toggle.instance">
+                <attr name="instanceClass" stringvalue="org.deepsetk.aierrors.LocalLlmToggleAction"/>
+            </file>
+            <file name="org-deepsetk-aierrors-autopair.instance">
+                <attr name="instanceClass" stringvalue="org.deepsetk.aierrors.AutoPairToggleAction"/>
+            </file>
+        </folder>
+    </folder>
+
+    <folder name="Menu">
+        <folder name="Tools">
+            <file name="org-deepsetk-aierrors-tutor.shadow">
+                <attr name="originalFile" stringvalue="Actions/Tools/org-deepsetk-aierrors-tutor.instance"/>
+                <attr name="position" intvalue="1590"/>
+            </file>
+            <file name="org-deepsetk-aierrors-explain.shadow">
+                <attr name="originalFile" stringvalue="Actions/Tools/org-deepsetk-aierrors-explain.instance"/>
+                <attr name="position" intvalue="1600"/>
+            </file>
+            <file name="org-deepsetk-aierrors-config.shadow">
+                <attr name="originalFile" stringvalue="Actions/Tools/org-deepsetk-aierrors-config.instance"/>
+                <attr name="position" intvalue="1610"/>
+            </file>
+            <file name="org-deepsetk-aierrors-ghost.shadow">
+                <attr name="originalFile" stringvalue="Actions/Tools/org-deepsetk-aierrors-ghost.instance"/>
+                <attr name="position" intvalue="1660"/>
+            </file>
+            <file name="org-deepsetk-aierrors-local-llm.shadow">
+                <attr name="originalFile" stringvalue="Actions/Tools/org-deepsetk-aierrors-local-llm.instance"/>
+                <attr name="position" intvalue="1670"/>
+            </file>
+            <file name="org-deepsetk-aierrors-opencode.shadow">
+                <attr name="originalFile" stringvalue="Actions/Tools/org-deepsetk-aierrors-opencode.instance"/>
+                <attr name="position" intvalue="1680"/>
+            </file>
+            <file name="org-deepsetk-aierrors-suggest-now.shadow">
+                <attr name="originalFile" stringvalue="Actions/Tools/org-deepsetk-aierrors-suggest-now.instance"/>
+                <attr name="position" intvalue="1690"/>
+            </file>
+            <file name="org-deepsetk-aierrors-local-toggle.shadow">
+                <attr name="originalFile" stringvalue="Actions/Tools/org-deepsetk-aierrors-local-toggle.instance"/>
+                <attr name="position" intvalue="1695"/>
+            </file>
+            <file name="org-deepsetk-aierrors-autopair.shadow">
+                <attr name="originalFile" stringvalue="Actions/Tools/org-deepsetk-aierrors-autopair.instance"/>
+                <attr name="position" intvalue="1698"/>
+            </file>
+        </folder>
+        <folder name="Window">
+            <file name="org-deepsetk-aierrors-tutor.shadow">
+                <attr name="originalFile" stringvalue="Actions/Tools/org-deepsetk-aierrors-tutor.instance"/>
+                <attr name="position" intvalue="920"/>
+            </file>
+        </folder>
+    </folder>
+
+    <folder name="Toolbars">
+        <folder name="File">
+            <file name="org-deepsetk-aierrors-tutor.shadow">
+                <attr name="originalFile" stringvalue="Actions/Tools/org-deepsetk-aierrors-tutor.instance"/>
+                <attr name="position" intvalue="9050"/>
+            </file>
+            <file name="org-deepsetk-aierrors-local-toggle.shadow">
+                <attr name="originalFile" stringvalue="Actions/Tools/org-deepsetk-aierrors-local-toggle.instance"/>
+                <attr name="position" intvalue="9080"/>
+            </file>
+            <file name="org-deepsetk-aierrors-autopair.shadow">
+                <attr name="originalFile" stringvalue="Actions/Tools/org-deepsetk-aierrors-autopair.instance"/>
+                <attr name="position" intvalue="9090"/>
+            </file>
+        </folder>
+    </folder>
+
+    <folder name="Editors">
+        <folder name="Popup">
+            <file name="org-deepsetk-aierrors-tutor.shadow">
+                <attr name="originalFile" stringvalue="Actions/Tools/org-deepsetk-aierrors-tutor.instance"/>
+                <attr name="position" intvalue="1205"/>
+            </file>
+            <file name="org-deepsetk-aierrors-explain.shadow">
+                <attr name="originalFile" stringvalue="Actions/Tools/org-deepsetk-aierrors-explain.instance"/>
+                <attr name="position" intvalue="1210"/>
+            </file>
+        </folder>
+        <folder name="text">
+            <folder name="x-java">
+                <file name="org-deepsetk-aierrors-ghost-layer.instance">
+                    <attr name="instanceClass" stringvalue="org.deepsetk.aierrors.GhostHighlightsLayerFactory"/>
+                    <attr name="instanceOf" stringvalue="org.netbeans.spi.editor.highlighting.HighlightsLayerFactory"/>
+                </file>
+            </folder>
+        </folder>
+    </folder>
+
+    <folder name="Windows2">
+        <folder name="Components">
+            <file name="GeminiTutor.settings">
+                <![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE settings PUBLIC "-//NetBeans//DTD Session settings 1.0//EN" "http://www.netbeans.org/dtds/sessionsettings-1_0.dtd">
+<settings version="1.0">
+  <instance class="org.deepsetk.aierrors.TutorTopComponent"/>
+</settings>
+]]>
+            </file>
+        </folder>
+        <folder name="Modes">
+            <folder name="output">
+                <file name="GeminiTutor.wstcref">
+                    <attr name="position" intvalue="920"/>
+                    <![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tc-ref PUBLIC "-//NetBeans//DTD Top Component in Mode Properties 2.0//EN" "http://www.netbeans.org/dtds/tc-ref2_0.dtd">
+<tc-ref version="2.0">
+  <tc-id id="GeminiTutor"/>
+  <state opened="false"/>
+</tc-ref>
+]]>
+                </file>
+            </folder>
+        </folder>
+    </folder>
+</filesystem>
+
+

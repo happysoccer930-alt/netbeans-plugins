@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Soft Dark - vista previa</title>
+<style>
+  :root{
+    --bg:#15171b; --bg-alt:#1b1f24; --gutter:#111316; --line:#1b1f24;
+    --fg:#b8bfc9; --dim:#6f7883; --keyword:#b48eae; --string:#9db38a;
+    --number:#c99f7a; --method:#8fb6c4; --field:#a892b8; --type:#c8c093;
+    --op:#9aa3ae; --sel:#2a3a4d; --search:#2c4436; --err:#b05c5c;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:#0d0f12;color:var(--fg);
+       font-family:"Segoe UI",system-ui,sans-serif;padding:32px}
+  h1{font-size:20px;font-weight:600;margin:0 0 4px;color:#dfe4ea}
+  p.sub{margin:0 0 24px;color:#7d858f;font-size:13px}
+  .wrap{max-width:1040px;margin:0 auto}
+  .editor{border:1px solid #262b31;border-radius:8px;overflow:hidden;
+          box-shadow:0 18px 40px rgba(0,0,0,.45);background:var(--bg)}
+  .titlebar{display:flex;align-items:center;gap:8px;background:#1b1e23;
+            padding:8px 12px;border-bottom:1px solid #262b31;font-size:12px;color:#8a929c}
+  .dot{width:9px;height:9px;border-radius:50%;background:#2c3138}
+  .tabs{display:flex;background:#16191d;border-bottom:1px solid #22272d;font-size:12px}
+  .tab{padding:7px 16px;color:#8a929c;border-right:1px solid #22272d}
+  .tab.on{background:var(--bg);color:#c9d0d9;box-shadow:inset 0 2px 0 #6f8fa8}
+  .code{display:flex;font-family:Consolas,"Cascadia Code",monospace;font-size:13.5px;line-height:1.6}
+  .gutter{background:var(--gutter);color:#5d646d;text-align:right;padding:14px 10px;
+          user-select:none;min-width:48px;border-right:1px solid #1e2227}
+  .gutter div.cur{background:#1b1f24;color:#9aa3ae}
+  pre{margin:0;padding:14px 18px;overflow-x:auto}
+  .k{color:var(--keyword)} .s{color:var(--string)} .n{color:var(--number)}
+  .m{color:var(--method)} .f{color:var(--field)} .t{color:var(--type)}
+  .o{color:var(--op)} .c{color:var(--dim);font-style:italic}
+  .a{color:#b09ab8} .esc{color:#c0a97e} .jd{color:#a88f6f}
+  .underscore{border-bottom:2px solid var(--err);padding-bottom:1px}
+  .legend{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+          gap:10px;margin-top:24px}
+  .chip{background:#16191d;border:1px solid #23282f;border-radius:6px;padding:10px 12px;font-size:12px}
+  .sw{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:7px;vertical-align:middle}
+  code{font-family:Consolas,monospace}
+  .note{margin-top:22px;font-size:12.5px;color:#8a929c;border-left:2px solid #2f3a45;padding-left:12px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Soft Dark · vista previa de la paleta</h1>
+  <p class="sub">Fondo grafito cálido <code>#15171b</code> · texto <code>#b8bfc9</code> · sin blanco puro ni azules saturados</p>
+
+  <div class="editor">
+    <div class="titlebar"><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+      <span style="margin-left:8px">DepositoService.java</span></div>
+    <div class="tabs"><div class="tab on">DepositoService.java</div><div class="tab">Deposito.java</div><div class="tab">README.md</div></div>
+    <div class="code">
+      <div class="gutter">
+        <div>24</div><div>25</div><div>26</div><div>27</div><div class="cur">28</div>
+        <div>29</div><div>30</div><div>31</div><div>32</div><div>33</div>
+        <div>34</div><div>35</div><div>36</div><div>37</div>
+      </div>
+<pre><span class="c">// Registra un depósito y actualiza el saldo del cliente.</span>
+<span class="a">@Service</span>
+<span class="k">public class</span> <span class="t">DepositoService</span> <span class="o">{</span>
+
+    <span class="k">private final</span> <span class="t">CuentaRepository</span> <span class="f">cuentas</span><span class="o">;</span>
+    <span class="k">private static final</span> <span class="t">BigDecimal</span> <span class="f">LIMITE</span> <span class="o">=</span> <span class="k">new</span> <span class="t">BigDecimal</span><span class="o">(</span><span class="s">"15000.00"</span><span class="o">);</span>
+
+    <span class="k">public</span> <span class="t">Deposito</span> <span class="m">registrar</span><span class="o">(</span><span class="t">String</span> <span class="f">dni</span><span class="o">,</span> <span class="t">BigDecimal</span> <span class="f">monto</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">if</span> <span class="o">(</span><span class="f">monto</span><span class="o">.</span><span class="m">compareTo</span><span class="o">(</span><span class="t">LIMITE</span><span class="o">)</span> <span class="o">&gt;</span> <span class="n">0</span><span class="o">)</span> <span class="o">{</span>
+            <span class="k">throw new</span> <span class="t">LimiteExcedido</span><span class="o">(</span><span class="s">"Monto "</span> <span class="o">+</span> <span class="f">monto</span><span class="o">);</span>  <span class="underscore" title="error"> </span>
+        <span class="o">}</span>
+        <span class="t">Cuenta</span> <span class="f">cuenta</span> <span class="o">=</span> <span class="f">cuentas</span><span class="o">.</span><span class="m">buscarPorDni</span><span class="o">(</span><span class="f">dni</span><span class="o">);</span>
+        <span class="k">return</span> <span class="f">cuenta</span><span class="o">.</span><span class="m">acreditar</span><span class="o">(</span><span class="f">monto</span><span class="o">,</span> <span class="s">"ventanilla"</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</pre>
+    </div>
+  </div>
+
+  <div class="legend">
+    <div class="chip"><span class="sw" style="background:#b48eae"></span>palabra clave · keyword</div>
+    <div class="chip"><span class="sw" style="background:#9db38a"></span>cadena · string</div>
+    <div class="chip"><span class="sw" style="background:#c99f7a"></span>número · number</div>
+    <div class="chip"><span class="sw" style="background:#8fb6c4"></span>método · method</div>
+    <div class="chip"><span class="sw" style="background:#a892b8"></span>campo · field</div>
+    <div class="chip"><span class="sw" style="background:#c8c093"></span>tipo · class</div>
+    <div class="chip"><span class="sw" style="background:#6f7883"></span>comentario</div>
+    <div class="chip"><span class="sw" style="background:#2a3a4d"></span>selección</div>
+    <div class="chip"><span class="sw" style="background:#2c4436"></span>búsqueda</div>
+    <div class="chip"><span class="sw" style="background:#b05c5c"></span>error (subrayado)</div>
+  </div>
+
+  <div class="note">
+    Comparado con FlatLaf Dark: el fondo baja de <code>#2b2b2b</code> a <code>#15171b</code>,
+    el texto de <code>#a9b7c6</code> a un gris más cálido, y la sintaxis pierde saturación
+    (menos azul y menos naranja eléctrico). El objetivo es reducir el contraste duro
+    que cansa la vista en sesiones largas.
+  </div>
+</div>
+</body>
+</html>

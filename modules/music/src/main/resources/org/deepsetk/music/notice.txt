@@ -1,0 +1,12 @@
+DeepSetk Music incluye, empaquetados dentro del modulo, estos decodificadores
+de audio de terceros (todos bajo GNU LGPL):
+
+- JLayer 1.0.1.4            https://www.javazoom.net/javalayer/javalayer.html
+- MP3SPI 1.9.5.4            https://www.javazoom.net/mp3spi/mp3spi.html
+- Tritonus Shared 0.3.7.4   https://www.tritonus.org/
+- JOrbis 0.0.17.4           https://www.jcraft.com/jorbis/
+- VorbisSPI 1.0.3.3         https://www.javazoom.net/vorbisspi/vorbisspi.html
+- jFLAC 1.5.2               https://github.com/ericfarng/jflac-codec (org.jflac)
+
+El codigo de DeepSetk Music se distribuye bajo Apache-2.0. Las licencias de
+estas bibliotecas se pueden consultar en sus sitios oficiales.

@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+OpenIDE-Module-Layer: org/deepsetk/aierrors/layer.xml
+OpenIDE-Module-Install: org/deepsetk/aierrors/GhostInstaller.class
+OpenIDE-Module-Short-Description: Explica errores y da clases de Java con Gemini (IA).
+OpenIDE-Module-Long-Description: Incluye un tutor para aprender con tu propio codigo: explica el archivo o la seleccion, revisa el codigo, genera preguntas de practica y explica errores de compilacion usando los diagnosticos reales de NetBeans. Tiene niveles (principiante, intermedio, avanzado) e historial de conversacion. La API key se guarda en las preferencias del IDE y el modelo se elige desde la lista oficial de la API.
+OpenIDE-Module-Display-Category: DeepSetk

@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+OpenIDE-Module-Layer: org/deepsetk/pluginmanager/layer.xml
+OpenIDE-Module-Short-Description: Gestor de plugins: activa y desactiva modulos de NetBeans.
+OpenIDE-Module-Long-Description: Panel con busqueda, categorias, estado y proteccion de dependencias para activar o desactivar modulos instalados. Tu eliges manualmente; los cambios se aplican al reiniciar NetBeans. No desinstala nada: solo activa o desactiva.
+OpenIDE-Module-Display-Category: DeepSetk

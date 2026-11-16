@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+OpenIDE-Module-Layer: org/deepsetk/music/layer.xml
+OpenIDE-Module-Short-Description: Reproductor de musica local con lista persistente.
+OpenIDE-Module-Long-Description: Reproduce MP3, FLAC, OGG y WAV desde una carpeta local, guarda la lista entre sesiones y ofrece controles (anterior, reproducir/pausar, detener, siguiente) en la barra de herramientas. No usa Internet ni servicios externos.
+OpenIDE-Module-Display-Category: DeepSetk
+OpenIDE-Module-Install: org/deepsetk/music/MusicInstaller.class

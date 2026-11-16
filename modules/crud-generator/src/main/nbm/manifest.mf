@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+OpenIDE-Module-Layer: org/deepsetk/crud/layer.xml
+OpenIDE-Module-Short-Description: Generador de CRUD para Java + MySQL.
+OpenIDE-Module-Long-Description: Pega un CREATE TABLE de MySQL y genera una entidad, un DAO con JDBC, un servicio y el SQL de insertar, actualizar, borrar y listar. Muestra una vista previa y guarda los archivos en la carpeta y el paquete que elijas.
+OpenIDE-Module-Display-Category: DeepSetk
