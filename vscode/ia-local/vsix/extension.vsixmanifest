@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+  <Metadata>
+    <Identity Language="en-US" Id="ia-local-deepsetk" Version="1.0.0" Publisher="deepsetk" />
+    <DisplayName>IA Local (DeepSetk)</DisplayName>
+    <Description xml:space="preserve">Boton en la barra de estado para activar la IA local de Bionic / LM Studio (127.0.0.1:1235) y el autocompletado de Continue. Sin internet.</Description>
+    <Categories>Other</Categories>
+  </Metadata>
+  <Installation>
+    <InstallationTarget Id="Microsoft.VisualStudio.Code" />
+  </Installation>
+  <Dependencies />
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.Code.Manifest" Path="extension/package.json" Addressable="true" />
+  </Assets>
+</PackageManifest>

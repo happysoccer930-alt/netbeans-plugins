@@ -1,0 +1,53 @@
+name: Bionic Local (offline)
+version: 2.2.0
+schema: v1
+
+# Un solo modelo cargado a la vez: cambiar de modelo obliga a LM Studio a
+# recargarlo (~20 s en este equipo, sin GPU). Por eso todo usa el 1.5B.
+models:
+  - name: Qwen2.5 Coder 1.5B (chat)
+    provider: openai
+    model: qwen2.5-coder-1.5b-instruct
+    apiBase: http://127.0.0.1:1235/v1
+    apiKey: local
+    roles:
+      - chat
+      - edit
+      - apply
+
+  - name: Qwen2.5 Coder 1.5B (autocompletado)
+    provider: openai
+    model: qwen2.5-coder-1.5b-instruct
+    apiBase: http://127.0.0.1:1235/v1
+    apiKey: local
+    roles:
+      - autocomplete
+
+  - name: Nomic Embed (indice del codigo)
+    provider: openai
+    model: text-embedding-nomic-embed-text-v1.5
+    apiBase: http://127.0.0.1:1235/v1
+    apiKey: local
+    roles:
+      - embed
+
+context:
+  - provider: code
+  - provider: diff
+  - provider: currentFile
+  - provider: terminal
+  - provider: problems
+  - provider: folder
+
+rules:
+  - "Responde en espanol neutro, breve y con codigo listo para usar."
+  - "Funciona para cualquier lenguaje: Python, Java, JavaScript, SQL, HTML, CSS, Bash."
+  - "Nunca inventes APIs ni metodos: usa solo lo que aparezca en el contexto."
+  - "Si falta contexto, pide el archivo o la clase concreta antes de responder."
+  - "Cuando generes SQL, incluye el CREATE TABLE y los indices necesarios."
+  - "Se conciso: sin repetir el codigo que ya esta en el archivo."
+
+tabAutocompleteOptions:
+  debounceDelay: 250
+  maxPromptTokens: 512
+  modelTimeout: 1500

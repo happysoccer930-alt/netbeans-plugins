@@ -1,0 +1,33 @@
+{
+  "name": "ia-local-deepsetk",
+  "displayName": "IA Local (DeepSetk)",
+  "description": "Boton en la barra de estado para activar la IA local de Bionic / LM Studio (127.0.0.1:1235) y el autocompletado de Continue. Sin internet.",
+  "version": "1.0.0",
+  "publisher": "deepsetk",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "iaLocal.toggle",
+        "title": "IA local: activar / desactivar autocompletado"
+      },
+      {
+        "command": "iaLocal.start",
+        "title": "IA local: abrir Bionic (puerto 1235)"
+      },
+      {
+        "command": "iaLocal.refresh",
+        "title": "IA local: refrescar estado"
+      }
+    ]
+  }
+}
