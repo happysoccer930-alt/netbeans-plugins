@@ -107,6 +107,10 @@ Debe devolver el id del modelo. El plugin de NetBeans autodetecta
 Comprobación: abajo a la derecha aparece `⚡ IA local ON`; al escribir código
 sale una sugerencia en gris y **Tab** la acepta.
 
+> ⚠️ Si al abrir la carpeta VS Code muestra **“Restricted Mode”**, las extensiones
+> no se activan (ni Continue ni el botón). Pulsa **Trust** en el aviso o
+> `Ctrl+Shift+P → Workspaces: Manage Workspace Trust → Trust`.
+
 ---
 
 ## 4. Visual Studio (opcional)
