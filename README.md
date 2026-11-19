@@ -113,9 +113,21 @@ modules/
  youtube/ YouTube
  plugin-manager/ Gestor de plugins
 docs/ Capturas, guía de IA y diagramas
-tools/ Lanzador "Iniciar IA + NetBeans"
+ tools/           Lanzador "Iniciar IA + NetBeans" y utilidades Windows
 dist/ .nbm listos para instalar
 ```
+
+---
+
+## Utilidad: Crystal Reports en español (error 2229)
+
+En `tools/crystal-reports-es/` está el diagnóstico y la solución al error 2229 del instalador de **SAP Crystal Reports for Visual Studio** en un Windows en español, además de un script que traduce el asistente al español.
+
+```powershell
+.\tools\crystal-reports-es\scripts\Fix-CrystalReports2229.ps1 -Package "CRforVS6413SP40_0-80007712.EXE"
+```
+
+Detalles y causas en [tools/crystal-reports-es/README.md](tools/crystal-reports-es/README.md).
 
 ---
 

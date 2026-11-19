@@ -1,0 +1,12 @@
+# Salidas y binarios (no redistribuir contenido de SAP)
+*.msi
+*.mst
+*.EXE
+*.exe
+*.cab
+*.log
+*.pdf
+*.rpt
+scratch.msi
+extract/
+package/
